@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-20px); } 100% { transform: translateY(0px); } }
+        .floating { animation: float 3s ease-in-out infinite; }
+    </style>
+</head>
+<body class="bg-pink-100 flex items-center justify-center min-h-screen font-sans">
+    <div class="text-center p-6 bg-white rounded-3xl shadow-xl mx-4">
+        <div class="text-6xl mb-4 floating">💝</div>
+        <h1 class="text-3xl font-bold text-pink-600 mb-2">Хайрт ирээдүйн эхнэртээ</h1>
+        <p class="text-gray-500 italic mb-6">Гомдоосонд уучлаарай хайрыгаа.</p>
+        <button onclick="showLove()" class="bg-pink-500 text-white px-8 py-3 rounded-full font-bold shadow-lg">Энэ дээр дар гүнжтэн минь</button>
+        <div id="msg" class="hidden mt-6 text-xl text-pink-700 font-medium">Надтай байгаад баярлалаа,Надаас яваагүйд баярлалаа,Надтай хамт үүрд байна гэсэнд баярлалаа.
+          Би чамаас өөрийг хайрлаж чадахгүй болохоор,
+          чамгүйгээр маргаашыг ч төсөөлж чадахгүй болохоор намайгаа битгий орхиорой гэж хайр нь гуйя
+    ХАЙРТАЙ ШҮҮ ЧАМДАА❣💞</div>
+    </div>
+    <script>
+        function showLove() { document.getElementById('msg').classList.remove('hidden'); }
+    </script>
+</body>
+</html>
